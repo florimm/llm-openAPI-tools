@@ -1,0 +1,74 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "MenuAPI",
+    "version": "1.0"
+  },
+  "paths": {
+    "/menu": {
+      "get": {
+        "tags": [
+          "MenuAPI"
+        ],
+        "description": "Get the whole menu",
+        "operationId": "GetMenu",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/menu/{name}": {
+      "get": {
+        "tags": [
+          "MenuAPI"
+        ],
+        "description": "Get a specific menu item by name",
+        "operationId": "GetMenuItem",
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/menu/{name}/price": {
+      "get": {
+        "tags": [
+          "MenuAPI"
+        ],
+        "description": "Get a specific menu item price",
+        "operationId": "GetMenuItemPrice",
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}

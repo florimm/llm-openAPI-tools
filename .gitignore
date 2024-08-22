@@ -1,0 +1,4 @@
+src/.vs/
+src/MenuAPI/bin/Debug/
+src/MenuAPI/obj/Debug/net8.0/MenuAPI.csproj.AssemblyReference.cache
+src/MenuAPI/obj/
